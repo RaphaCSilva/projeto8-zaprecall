@@ -1,6 +1,11 @@
 import React from "react";
+import getPerguntasData from './perguntasData';
+import Pergunta from './pergunta';
 
 export default function Game (props){
+    
+    var perguntas = getPerguntasData();
+
     return (
         <>
         <div className="mini-logo">
@@ -10,9 +15,7 @@ export default function Game (props){
           </h1>
         </div>
         <ul>
-            <li>
-                <h3>Pergunta 1</h3>
-            </li>
+          {perguntas.map((pergunta, index) => <Pergunta {...pergunta} key={index} />)}
         </ul>
         </>
     );
