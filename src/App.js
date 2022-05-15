@@ -1,11 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, {Component, useState} from "react";
 import Page1 from "./componentes/pag1"
-function App() {
+import Game from "./componentes/game"
+
+export default function App() {
   return (
-    <>
-        <Page1/>
-    </>  
+    <BrowserRouter>
+    <Page1></Page1>
+    <Routes>
+      <Route path="/game" element={<Game/>} />
+    </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
