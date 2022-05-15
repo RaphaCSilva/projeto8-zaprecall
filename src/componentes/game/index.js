@@ -3,15 +3,17 @@ import React from "react";
 export default function Game (props){
     return (
         <>
-        <div className="logo">
-          <img src="assets/img/logo.png" alt=""/>
+        <div className="mini-logo">
+          <img src="assets/img/logo-pequeno.png" alt=""/>
           <h1>
             ZapRecall
           </h1>
         </div>
-        <button className="start">
-          <h2> Iniciar Recall! </h2>
-        </button>
+        <ul>
+            <li>
+                <h3>Pergunta 1</h3>
+            </li>
+        </ul>
         </>
     );
 }

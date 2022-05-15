@@ -6,9 +6,10 @@ import Game from "./componentes/game"
 export default function App() {
   return (
     <BrowserRouter>
-    <Page1></Page1>
+    
     <Routes>
-      <Route path="/game" element={<Game/>} />
+    <Route path="" element={<Page1/>} />   
+    <Route path="/game" element={<Game/>} />
     </Routes>
     </BrowserRouter>
   );
