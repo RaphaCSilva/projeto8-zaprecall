@@ -86,11 +86,12 @@ button{
   height: 60px;
 }
 ul{
-  margin: auto;
+  width: 100%;
   margin-top: 51px;
   margin-bottom: 70px;
 }
 li{
+  margin: auto;
   margin-bottom: 25px;
   height: 65px;
   background: #FFFFFF;

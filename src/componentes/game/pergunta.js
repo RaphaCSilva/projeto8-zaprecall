@@ -12,6 +12,7 @@ export default function Pergunta(props) {
   const [riscogreen, setRiscogreen] = React.useState(false);
   const [riscored, setRiscored] = React.useState(false);
   const [riscoorange, setRiscoorange] = React.useState(false);
+  const [plays, setPlays] = React.useState(0);
 
   let text;
   let modo;
@@ -66,7 +67,7 @@ export default function Pergunta(props) {
         <div className='quase' onClick={riscaQuase}>
           <h5>Quase não lembrei</h5>
         </div>
-        <div className='sim' onClick={riscaSim}>
+        <div className='sim' onClick={()=>{riscaSim()}}>
           <h5>Zap!</h5>
         </div>
       </div>);  
@@ -76,17 +77,22 @@ export default function Pergunta(props) {
     setTexto(true);
     setMinimenu(false);
     setRiscogreen(true);
+    setPlays(plays++);
   }
   function riscaQuase(){
     setTexto(true); 
     setMinimenu(false);
     setRiscoorange(true);
+
   }
  function riscaNao(){
     setTexto(true);
     setMinimenu(false);
     setRiscored(true);
+    setPlays(plays++);
   }
+
+
   if(riscogreen){
     modo = "front green";
   }
@@ -96,9 +102,17 @@ export default function Pergunta(props) {
   if(riscoorange){
     modo = "front orange";
   }
+
+
   return (
+    <>
     <li className = {modo}>
       <h3> {text} {n}</h3>{img}{botoes}
     </li>
+    <div className="menu">
+    <h4> {plays}/8 CONCLUIDAS</h4>
+    </div>
+    </>
   );
+
 }

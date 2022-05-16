@@ -17,9 +17,7 @@ export default function Game (props){
         <ul>
           {perguntas.map((pergunta, index) => <Pergunta {...pergunta} key={index}/>)}
         </ul>
-        <div className="menu">
-            <h4> 0/8 CONCLUIDAS</h4>
-        </div>
+        
         </div>
     );
 }
