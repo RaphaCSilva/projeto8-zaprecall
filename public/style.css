@@ -174,3 +174,15 @@ h5 {
 .sim {
   background: #2FBE34;
 }
+.green h3{
+  text-decoration-line: line-through;
+  color: #2FBE34;
+}
+.orange h3{
+  text-decoration-line: line-through;
+  color: #FF922E;
+}
+.red h3{
+  text-decoration-line: line-through;
+  color: #FF3030;
+}

@@ -5,10 +5,6 @@ import Pergunta from './pergunta';
 export default function Game (props){
     
     var perguntas = getPerguntasData();
-    
-    function virarPergunta(){ 
-        
-    }
 
     return (
         <div className="container">
@@ -22,7 +18,7 @@ export default function Game (props){
           {perguntas.map((pergunta, index) => <Pergunta {...pergunta} key={index}/>)}
         </ul>
         <div className="menu">
-            <h4> 0/4 CONCLUIDAS</h4>
+            <h4> 0/8 CONCLUIDAS</h4>
         </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Pergunta(props) {
-  var { n, Q, R } = props;
+  var { n, Q, R, corrisco } = props;
   function virarPergunta(){
     
   }
@@ -9,7 +9,10 @@ export default function Pergunta(props) {
   const [flipped, setFlipped] = React.useState(false);
   const [resposta, setRespostas] = React.useState(false);
   const [minimenu, setMinimenu] = React.useState(false);
-  
+  const [riscogreen, setRiscogreen] = React.useState(false);
+  const [riscored, setRiscored] = React.useState(false);
+  const [riscoorange, setRiscoorange] = React.useState(false);
+
   let text;
   let modo;
   let img;
@@ -23,14 +26,16 @@ export default function Pergunta(props) {
     setTexto(true);
     setFlipped(false);
   }
-
+  if(flipped){
+    modo = "flipped";
+  }else{
+    modo = "front";
+  }
   if(texto){
     text = "pergunta";
-    modo = "front";
     img = play();
   }else {
     text = Q;
-    modo = "flipped";
     n = null;
     img = setinha();
   }
@@ -69,20 +74,28 @@ export default function Pergunta(props) {
 
   function riscaSim(){
     setTexto(true);
-    setFlipped(false);
-    botoes = (""); 
+    setMinimenu(false);
+    setRiscogreen(true);
   }
   function riscaQuase(){
-    setTexto(true);
-    setFlipped(false);
-    botoes = (""); 
+    setTexto(true); 
+    setMinimenu(false);
+    setRiscoorange(true);
   }
   function riscaNao(){
     setTexto(true);
-    setFlipped(false);
-    botoes = (""); 
+    setMinimenu(false);
+    setRiscored(true);
   }
-
+  if(riscogreen){
+    modo = "front green";
+  }
+  if(riscored){
+    modo = "front red";
+  }
+  if(riscoorange){
+    modo = "front orange";
+  }
   return (
     <li className = {modo}>
       <h3> {text} {n}</h3>{img}{botoes}
