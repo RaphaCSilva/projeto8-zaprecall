@@ -5,7 +5,7 @@ import Pergunta from './pergunta';
 export default function Game (props){
     
     var perguntas = getPerguntasData();
-
+    
     return (
         <div className="container">
         <div className="mini-logo">

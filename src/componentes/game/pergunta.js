@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Pergunta(props) {
-  var { n, Q, R, corrisco } = props;
+  var { n, Q, R } = props;
   function virarPergunta(){
     
   }
@@ -82,7 +82,7 @@ export default function Pergunta(props) {
     setMinimenu(false);
     setRiscoorange(true);
   }
-  function riscaNao(){
+ function riscaNao(){
     setTexto(true);
     setMinimenu(false);
     setRiscored(true);
