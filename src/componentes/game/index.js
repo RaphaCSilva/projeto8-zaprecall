@@ -5,9 +5,13 @@ import Pergunta from './pergunta';
 export default function Game (props){
     
     var perguntas = getPerguntasData();
+    
+    function virarPergunta(){ 
+        
+    }
 
     return (
-        <>
+        <div className="container">
         <div className="mini-logo">
           <img src="assets/img/logo-pequeno.png" alt=""/>
           <h1>
@@ -15,8 +19,11 @@ export default function Game (props){
           </h1>
         </div>
         <ul>
-          {perguntas.map((pergunta, index) => <Pergunta {...pergunta} key={index} />)}
+          {perguntas.map((pergunta, index) => <Pergunta {...pergunta} key={index}/>)}
         </ul>
-        </>
+        <div className="menu">
+            <h4> 0/4 CONCLUIDAS</h4>
+        </div>
+        </div>
     );
 }

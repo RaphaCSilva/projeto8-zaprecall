@@ -1,9 +1,13 @@
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: #FB6B6B ;
-  display: flex;
-  justify-content: center;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+}  
 h1 {
   font-family: 'Righteous';
   font-style: normal;
@@ -33,6 +37,14 @@ font-size: 16px;
 line-height: 19px;
 color: #333333;
 }
+h4 {
+  font-family: 'Recursive';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #333333;
+}
 .logo{
   margin: auto;
   margin-top: 148px;
@@ -51,17 +63,17 @@ color: #333333;
   margin-bottom: 30px;
 }
 button{
-  width: 246px;
+  margin-left: 35%;
+  width: 30%;
   height: 54px;
   background: #FFFFFF;
   border: 1px solid #D70900;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  margin: auto;
 }
 .mini-logo{
+  margin: auto;
   margin-top: 44px;
-  margin-left: 25px;
   display: flex;
 }
 .mini-logo h1{
@@ -74,13 +86,44 @@ button{
   height: 60px;
 }
 ul{
+  margin: auto;
   margin-top: 51px;
+  margin-bottom: 70px;
 }
 li{
   margin-bottom: 25px;
-  width: 300px;
   height: 65px;
   background: #FFFFFF;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flipped{
+width: 300px;
+height: 131px;
+background: #FFFFD5;
+box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+transition: all 300ms;
+}
+.front {
+  width: 300px;
+}
+li h3{
+  margin-left: 15px;
+}
+li img{
+  margin-right: 15px;
+  width: 20px;
+  height: 23px;
+}
+.menu{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }

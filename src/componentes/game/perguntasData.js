@@ -1,19 +1,45 @@
 export default function getPerguntasData() {
     return [
     {
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "n": " 1",
+        "Q": "Oque é JSX?",
+        "R": "Uma extensão de linguagem do JavaScript"
     },
     {
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "n": " 2",
+        "Q": "Oque é JSX2?",
+        "R": "Uma extensão de linguagem do JavaScript"
     },
     {
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "n": " 3",
+        "Q": "Oque é JSX3?",
+        "R": "Uma extensão de linguagem do JavaScript"
     },
     {
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "text": "Pergunta",
+        "n": " 4",
+        "Q": "Oque é JSX4?",
+        "R": "Uma extensão de linguagem do JavaScript"
     },
     {
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "n": " 5",
+        "Q": "Oque é JSX5?",
+        "R": "Uma extensão de linguagem do JavaScript"
     },
+    {
+        "n": " 6",
+        "Q": "Oque é JSX?",
+        "R": "Uma extensão de linguagem do JavaScript"
+    },
+    {
+        "n": " 7",
+        "Q": "Oque é JSX?",
+        "R": "Uma extensão de linguagem do JavaScript"
+    },
+    {
+        "n": " 8",
+        "Q": "Oque é JSX?",
+        "R": "Uma extensão de linguagem do JavaScript"
+    }
     ];
   }
